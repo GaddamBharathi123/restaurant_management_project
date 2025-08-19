@@ -20,3 +20,10 @@ def home_view(request):
     return render(request,"home.html",{"restaurent_name":restaurent_name})
 def about_view(request):
     return render(request,"about us.html")
+
+def home(request):
+    context={
+        "restaurant_name":"SpiceHub Restaurant",
+        "welcome_message":"Welcome to SpiceHUB! Taste the tradition,served fresh every day."
+    }
+    return render(request,"home.html",context)
