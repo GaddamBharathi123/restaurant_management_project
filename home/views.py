@@ -18,3 +18,5 @@ def get_menu(request):
 def home_view(request):
     restaurent_name=settings.RESTAURENT_NAME
     return render(request,"home.html",{"restaurent_name":restaurent_name})
+def about_view(request):
+    return render(request,"about us.html")
