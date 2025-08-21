@@ -35,3 +35,6 @@ def menu_view(request):
         {"name":"Sandwich","price":100},
         ]    
         return render(request,"menu.html",{"menu_items":menu_items})
+def homepage(request):
+    phone= getattr(settings,"RESTAURANT_PHONE","Not Available")
+    return render(request,"home.html",{"phone":phone})        
