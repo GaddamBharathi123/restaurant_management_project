@@ -1,0 +1,56 @@
+<style>
+ body{
+    font-family:Arial,sans-serif;
+    background:#f4f6f9;
+    margin:0;
+    padding:0;
+ }
+
+ .container{
+    max-width:700px;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:8px;
+    box-shadow:0 4px 6px rgba(0,0,0,0.1);
+ }
+ h1{
+    text-align:center;
+    color:#4CAF50;
+    margin-bottom:20px;
+ }
+ .info{
+    margin-bottom:25px;
+ }
+ .info p{
+    margin:5px 0;
+    font-size:1.1rem;
+ }
+
+ form label{
+    display:block;
+    margin:10px 0 5px;
+    font-weight:bold;
+ }
+
+ from input,form textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid#ddd;
+    border-radius: 5px;
+    margin-bottom: 15px
+ }
+ form button{
+    background:#4CAF50;
+    color:white;
+    border:none;
+    padding: 12px 20px;
+    border-radius: 5px
+    cursor: pointer;
+    font-size: 1rem;
+
+ }
+ form button:hover{
+    background:#43a047;
+ }
+</style> 
