@@ -34,7 +34,4 @@ def menu_view(request):
         {"name":"Pasta","price":200},
         {"name":"Sandwich","price":100},
         ]    
-        return render(request,"menu.html",{"menu_items":menu_items})
-def homepage(request):
-    phone= getattr(settings,"RESTAURANT_PHONE","Not Available")
-    return render(request,"home.html",{"phone":phone})        
+        return render(request,"menu.html",[{"menu_items":menu_items}])
