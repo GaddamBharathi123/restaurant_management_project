@@ -27,3 +27,11 @@ def home(request):
         "welcome_message":"Welcome to SpiceHUB! Taste the tradition,served fresh every day."
     }
     return render(request,"home.html",context)
+def menu_view(request):
+    menu_items=[
+        {"name":"Pizza","price":250},
+        {"name":"Burger","price":150},
+        {"name":"Pasta","price":200},
+        {"name":"Sandwich","price":100},
+        ]    
+        return render(request,"menu.html",{"menu_items":menu_items})
